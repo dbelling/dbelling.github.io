@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Post with Large Feature Image and Text"
-description: "Custom written post descriptions are the way to go... if you're not lazy."
+title: "Duality of Ideas and Engagement"
 tags: [engagement, innovation]
 modified: 2016-05-02
 image:
