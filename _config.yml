@@ -1,7 +1,8 @@
 # Site settings
 title: Dan Belling, Software Developer
-tag_text: Dan 
+tag_text: Dan
 description: Hello, Internet.
+google_analytics: UA-80211904-1
 
 # Build settings
 markdown: kramdown
