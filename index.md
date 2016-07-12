@@ -22,7 +22,7 @@ I hold degrees in Chemistry and Computer Science from the [University of Minneso
 
 Not unlike a mattress - this tech list is where I feel at ease.
 
-* Languages: Ruby, Javascript, Python.
+* Languages: Ruby, Javascript, Python
 * Markup: HAML, CSS, SASS
 * Frameworks: Rails, Django, Node
 * Cloud: Heroku, AWS
@@ -32,7 +32,7 @@ and of course...
 
 Vim > Emacs
 
-### Just Remember...
+### Just Remember:
 
 ~~~bash
 $ fortune -m computers
