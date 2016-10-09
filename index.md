@@ -45,4 +45,4 @@ All programmers are optimists.  Perhaps this modern sorcery especially attracts 
 
 Dan Belling([Twitter](http://twitter.com/dannybeeeee)/[GitHub](http://github.com/dbelling)/[LinkedIn](https://linkedin.com/in/danbelling)/[Instagram](https://instagram.com/danbelling)).
 
-![Dan Belling](https://en.gravatar.com/userimage/98488740/1ed6362f5e4b124756a61d23243b7ac8?size=200)
+![Dan Belling](https://en.gravatar.com/userimage/98488740/1218960aff13f1499af1d2256239bccc.jpg?size=200)
