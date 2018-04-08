@@ -10,13 +10,11 @@ Python and Javascript aren't so bad either.
 
 I'm originally from Chanhassen, MN - home of the late [Prince Rogers Nelson](https://en.wikipedia.org/wiki/Prince_(musician)) and [Eckankar](https://en.wikipedia.org/wiki/Eckankar). I'd like to think I still turned out somewhat normal.
 
-I currently work as a software engineer for [Apruve](https://www.apruve.com). We offer B2B solutions for credit-management-as-a-service (CMaaS).
+I currently work as a software engineer for [ReachLocal](https://www.reachlocal.com) - a digital marketing SaaS company, recently acquired by [Gannett](https://www.gannett.com/).
 
-Prior to my time with Apruve, I worked as a software consultant in Optum Technology's [Innovation Garage](http://www.thegarage.us) alongside a team of UX/UI designers to deliver MVP health and wellness applications.
+Prior to my time with ReachLocal, I worked as a Rails Engineer at [Apruve](https://www.apruve.com) and as a software consultant in Optum Technology's [Innovation Garage](http://www.thegarage.us).
 
-Before my time with Optum, I spent my days as a lab rat in [3M's ESPE dental division](http://www.3m.com/3M/en_US/dental-us/) and became very familiar with six sigma [design of experiments](https://www.isixsigma.com/tools-templates/design-of-experiments-doe/design-experiments-software-testing/) and [color space](https://en.wikipedia.org/wiki/Lab_color_space). Too much time working in yellow light and the stench of methacrylated bovine teeth finally got to me, so I cowered to the safety of software development.
-
-Outside of work, I bowl in a league and have recently started a [Pathfinder campaign](http://paizo.com/pathfinderRPG) with a few friends. I never seem to tire of Seinfeld and Mystery Science Theater 3000 reruns.
+Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/) with some former coworkers, and dabble in tabletop tomfoolery. I never seem to tire of Seinfeld and Mystery Science Theater 3000 reruns.
 
 I hold degrees in Chemistry and Computer Science from the [University of Minnesota, Twin Cities](http://twin-cities.umn.edu).
 
