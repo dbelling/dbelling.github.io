@@ -2,6 +2,8 @@
 layout: default
 ---
 
+![Dan Belling](https://en.gravatar.com/userimage/98488740/1218960aff13f1499af1d2256239bccc.jpg?size=200)
+
 I'm a Ruby Developer based in Minneapolis.
 
 Python and Javascript aren't so bad either.
@@ -18,6 +20,8 @@ Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/
 
 I hold degrees in Chemistry and Computer Science from the [University of Minnesota, Twin Cities](http://twin-cities.umn.edu).
 
+[Read more](https://stackoverflow.com/users/story/4557209)
+
 ## Comfort Stack
 
 Not unlike a mattress - this tech list is where I feel at ease.
@@ -26,7 +30,7 @@ Not unlike a mattress - this tech list is where I feel at ease.
 * Markup: HAML, CSS, SASS
 * Frameworks: Rails, Django, Node
 * Cloud: Heroku, AWS
-* Databases: PostgreSQL, MySQL
+* Databases: PostgreSQL, MySQL, Apache Cassandra
 
 and of course...
 
@@ -43,6 +47,8 @@ All programmers are optimists.  Perhaps this modern sorcery especially attracts 
 
 ## Don't be a Stranger
 
-Dan Belling([Twitter](http://twitter.com/dannybeeeee)/[GitHub](http://github.com/dbelling)/[LinkedIn](https://linkedin.com/in/danbelling)/[Instagram](https://instagram.com/danbelling)).
-
-![Dan Belling](https://en.gravatar.com/userimage/98488740/1218960aff13f1499af1d2256239bccc.jpg?size=200)
+* [Twitter](http://twitter.com/dan__irl__)
+* [GitHub](http://github.com/dbelling)
+* [LinkedIn](https://linkedin.com/in/danbelling)
+* [Instagram](https://instagram.com/danbelling)
+* [Stack Overflow](https://stackoverflow.com/users/4557209/danbelling)
