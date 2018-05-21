@@ -20,7 +20,7 @@ Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/
 
 I hold degrees in Chemistry and Computer Science from the [University of Minnesota, Twin Cities](http://twin-cities.umn.edu).
 
-[Read more](https://stackoverflow.com/users/story/4557209)
+[Read more](https://stackoverflow.com/story/danbelling)
 
 ## Comfort Stack
 
