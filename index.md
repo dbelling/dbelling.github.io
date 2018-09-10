@@ -16,7 +16,9 @@ I currently work as a software engineer for [ReachLocal](https://www.reachlocal.
 
 Prior to my time with ReachLocal, I worked as a Rails Engineer at [Apruve](https://www.apruve.com) and as a software consultant in Optum Technology's [Innovation Garage](http://www.thegarage.us).
 
-Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/) with some former coworkers, and dabble in tabletop tomfoolery. I never seem to tire of Seinfeld and Mystery Science Theater 3000 reruns.
+I also teach part-time during the evenings at the University of Minnesota's [coding boot camp](https://bootcamp.umn.edu/coding/). In the immortal words of Michael Stipe, "everybody hates a sad professor" - having a passion for the subject material certainly helps with engagement.
+
+Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/) with some former coworkers, and dabble in tabletop tomfoolery - [Gloomhaven](http://www.cephalofair.com/gloomhaven) is my latest addiction. I never seem to tire of Seinfeld and Mystery Science Theater 3000 reruns.
 
 I hold degrees in Chemistry and Computer Science from the [University of Minnesota, Twin Cities](http://twin-cities.umn.edu).
 
