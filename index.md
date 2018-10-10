@@ -29,7 +29,7 @@ I hold degrees in Chemistry and Computer Science from the [University of Minneso
 Not unlike a mattress - this tech list is where I feel at ease.
 
 * Languages: Ruby, Javascript, Python
-* Markup: HAML, CSS, SASS
+* Markup: HTML, HAML, CSS, SASS
 * Frameworks: Rails, Django, Node
 * Cloud: Heroku, AWS
 * Databases: PostgreSQL, MySQL, Apache Cassandra
