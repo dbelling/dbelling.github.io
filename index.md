@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Dan Belling](https://en.gravatar.com/userimage/98488740/1218960aff13f1499af1d2256239bccc.jpg?size=200)
+![Dan Belling](https://en.gravatar.com/userimage/98488740/fe9eb6e5003cf059795d5dc5251297c6.jpg?size=200)
 
 I'm a Ruby Developer based in Minneapolis.
 
@@ -12,13 +12,11 @@ Python and Javascript aren't so bad either.
 
 I'm originally from Chanhassen, MN - home of the late [Prince Rogers Nelson](https://en.wikipedia.org/wiki/Prince_(musician)) and [Eckankar](https://en.wikipedia.org/wiki/Eckankar). I'd like to think I still turned out somewhat normal.
 
-I currently work as a software engineer for [ReachLocal](https://www.reachlocal.com) - a digital marketing SaaS company, recently acquired by [Gannett](https://www.gannett.com/).
+I currently work as a platform engineer for [Flipgrid](https://info.flipgrid.com/) - a social learning and engagement video platform at [Microsoft](https://www.microsoft.com/).
 
-Prior to my time with ReachLocal, I worked as a Rails Engineer at [Apruve](https://www.apruve.com) and as a software consultant in Optum Technology's [Innovation Garage](http://www.thegarage.us).
+Prior to my time with Microsoft, I worked as a software engineer at [Gannett](https://www.gannett.com/), a rails engineer at [Apruve](https://www.apruve.com) and as a software consultant in Optum Technology's [Innovation Garage](http://www.thegarage.us). I have also taught several courses at the University of Minnesota's [coding boot camp](https://bootcamp.umn.edu/coding/).
 
-I also teach part-time during the evenings at the University of Minnesota's [coding boot camp](https://bootcamp.umn.edu/coding/). In the immortal words of Michael Stipe, "everybody hates a sad professor" - having a passion for the subject material certainly helps with engagement.
-
-Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/) with some former coworkers, and dabble in tabletop tomfoolery - [Gloomhaven](http://www.cephalofair.com/gloomhaven) is my latest addiction. I never seem to tire of Seinfeld and Mystery Science Theater 3000 reruns.
+Outside of work, I bowl in a league at [Town Hall Lanes](http://www.thlanes.com/) with some former coworkers, and dabble in tabletop tomfoolery - [Gloomhaven](http://www.cephalofair.com/gloomhaven) is my latest addiction. I never seem to tire of Seinfeld and Mystery Science Theater 3000 reruns, and have a soft spot for 80's college rock - especially, R.E.M. and Big Star.
 
 I hold degrees in Chemistry and Computer Science from the [University of Minnesota, Twin Cities](http://twin-cities.umn.edu).
 
@@ -31,7 +29,7 @@ Not unlike a mattress - this tech list is where I feel at ease.
 * Languages: Ruby, Javascript, Python
 * Markup: HTML, HAML, CSS, SASS
 * Frameworks: Rails, Django, Node
-* Cloud: Heroku, AWS
+* Cloud: Heroku, AWS, GCP, Azure
 * Databases: PostgreSQL, MySQL, Apache Cassandra
 
 and of course...
