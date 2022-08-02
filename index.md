@@ -20,7 +20,7 @@ In "the before times", I bowled in a league at [Town Hall Lanes](http://www.thla
 
 I hold degrees in Chemistry and Computer Science from the [University of Minnesota, Twin Cities](http://twin-cities.umn.edu).
 
-[Read more](https://stackoverflow.com/story/danbelling)
+[Read more](https://voyageminnesota.com/interview/rising-stars-meet-dan-belling-of-saint-louis-park/)
 
 ## Comfort Stack
 
