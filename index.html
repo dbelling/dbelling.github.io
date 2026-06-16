@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dan Belling — Software Developer & Educator based in Minneapolis, MN." />
+  <title>Dan Belling, Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #0e0f0c;
+      color: #e8e4d9;
+      min-height: 100vh;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    /* Nav */
+    .db-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      border-bottom: 0.5px solid rgba(232,228,217,0.12);
+    }
+    .db-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px;
+      color: #e8e4d9;
+      text-decoration: none;
+    }
+    .db-nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .db-nav-links a {
+      color: rgba(232,228,217,0.45);
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .db-nav-links a:hover { color: rgba(232,228,217,0.8); }
+
+    /* Hero */
+    .db-hero {
+      padding: 5rem 3rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 4rem;
+      align-items: start;
+      border-bottom: 0.5px solid rgba(232,228,217,0.12);
+    }
+    .db-hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8fb87a;
+      margin-bottom: 1.25rem;
+    }
+    .db-hero-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 52px;
+      line-height: 1.05;
+      margin-bottom: 0.5rem;
+      color: #e8e4d9;
+      font-weight: 400;
+    }
+    .db-hero-name em {
+      font-style: italic;
+      color: #c9b88a;
+    }
+    .db-hero-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      color: rgba(232,228,217,0.35);
+      margin-bottom: 2rem;
+      letter-spacing: 0.04em;
+    }
+    .db-hero-bio {
+      font-size: 16px;
+      color: rgba(232,228,217,0.68);
+      line-height: 1.75;
+      max-width: 540px;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    .db-hero-bio a {
+      color: #c9b88a;
+      text-decoration: underline;
+      text-decoration-color: rgba(201,184,138,0.3);
+    }
+    .db-cta-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .db-btn-primary {
+      background: #8fb87a;
+      color: #0e0f0c;
+      border: none;
+      padding: 10px 22px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .db-btn-ghost {
+      background: transparent;
+      color: rgba(232,228,217,0.55);
+      border: 0.5px solid rgba(232,228,217,0.2);
+      padding: 10px 22px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .db-avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 4px;
+      object-fit: cover;
+      border: 0.5px solid rgba(232,228,217,0.12);
+      filter: grayscale(20%);
+      display: block;
+    }
+
+    /* Sections */
+    .db-section {
+      padding: 3rem;
+      border-bottom: 0.5px solid rgba(232,228,217,0.12);
+    }
+    .db-section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(232,228,217,0.28);
+      margin-bottom: 2rem;
+    }
+
+    /* Work history */
+    .db-work-row {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .db-work-tag {
+      font-size: 13px;
+      color: rgba(232,228,217,0.5);
+      border-bottom: 0.5px solid rgba(232,228,217,0.18);
+      padding-bottom: 2px;
+    }
+
+    /* Projects */
+    .db-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(232,228,217,0.07);
+      border: 0.5px solid rgba(232,228,217,0.07);
+    }
+    .db-project-card {
+      background: #0e0f0c;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: background 0.2s;
+    }
+    .db-project-card:hover { background: #141511; }
+    .db-project-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8fb87a;
+    }
+    .db-project-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px;
+      color: #e8e4d9;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+    .db-project-desc {
+      font-size: 13px;
+      color: rgba(232,228,217,0.52);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+    .db-project-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: rgba(232,228,217,0.28);
+      margin-top: auto;
+      padding-top: 0.5rem;
+      border-top: 0.5px solid rgba(232,228,217,0.08);
+    }
+
+    /* Stack */
+    .db-stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1px;
+      background: rgba(232,228,217,0.07);
+      border: 0.5px solid rgba(232,228,217,0.07);
+    }
+    .db-stack-cell { background: #0e0f0c; padding: 1.25rem; }
+    .db-stack-category {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8fb87a;
+      margin-bottom: 0.6rem;
+    }
+    .db-stack-items {
+      color: rgba(232,228,217,0.6);
+      font-size: 13px;
+      line-height: 1.9;
+      list-style: none;
+    }
+
+    /* Quote */
+    .db-quote-block {
+      border-left: 2px solid #8fb87a;
+      padding: 0.25rem 0 0.25rem 1.5rem;
+    }
+    .db-quote-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: rgba(232,228,217,0.38);
+      line-height: 1.85;
+    }
+
+    /* Social */
+    .db-social-row {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .db-social-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: rgba(232,228,217,0.4);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+    .db-social-link:hover { color: rgba(232,228,217,0.75); }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .db-nav { padding: 1.25rem 1.5rem; }
+      .db-hero {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+      }
+      .db-hero-name { font-size: 38px; }
+      .db-avatar { width: 120px; height: 120px; }
+      .db-section { padding: 2rem 1.5rem; }
+      .db-projects-grid { grid-template-columns: 1fr; }
+      .db-stack-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="db-nav">
+    <a class="db-logo" href="/">db.</a>
+  </nav>
+
+  <section class="db-hero" id="about">
+    <div>
+      <p class="db-hero-eyebrow">Minneapolis, MN </p>
+      <h1 class="db-hero-name">Dan<br><em>Belling</em></h1>
+      <p class="db-hero-title">Software Developer, Technology Consultant &amp; Educator</p>
+      <p class="db-hero-bio">
+        I build things for the web — from fintech and media to edtech and nonprofits.
+        Currently at <a href="https://www.slalom.com/">Slalom</a>. Also a bootcamp instructor, occasional trivia host,
+        and fulfilled pet parent to two dogs with better Instagram followings than mine.
+      </p>
+      <div class="db-cta-row">
+        <a class="db-btn-primary" href="https://linkedin.com/in/danbelling">LinkedIn</a>
+        <a class="db-btn-ghost" href="https://github.com/dbelling">GitHub</a>
+      </div>
+    </div>
+    <div>
+      <img class="db-avatar" src="https://gravatar.com/userimage/98488740/c464201fe1487521ec3b142452a06e07.jpeg?size=200" alt="Dan Belling" />
+    </div>
+  </section>
+
+  <section class="db-section" id="projects">
+    <p class="db-section-label">Selected projects</p>
+    <div class="db-projects-grid">
+
+      <div class="db-project-card">
+        <p class="db-project-tag">Fintech · ForUsAll</p>
+        <h3 class="db-project-name">Alt-401(k)</h3>
+        <p class="db-project-desc">An affordable 401(k) with crypto investment options — giving businesses and employees more flexibility and growth potential, including a dedicated Roth crypto window.</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">B2B Payments · Apruve</p>
+        <h3 class="db-project-name">Apruve – BigCommerce</h3>
+        <p class="db-project-desc">Let BigCommerce merchants extend net terms to business buyers while getting paid within 24 hours — no manual tasks required.</p>
+        <p class="db-project-note">Exited · now part of TreviPay</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">Climate · CleanCounts</p>
+        <h3 class="db-project-name">CleanCounts</h3>
+        <p class="db-project-desc">Certificate tracking system for RECs and AECs — delivering environmental and economic benefits to generators across North America.</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">Edtech · Microsoft</p>
+        <h3 class="db-project-name">Flipgrid</h3>
+        <p class="db-project-desc">Short video sharing for classrooms and communities — empowering every student voice. Core features now live in Microsoft Teams for Education.</p>
+        <p class="db-project-note">Sunset Sept 2024 · rolled into Teams for Education</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">Healthcare · Optum</p>
+        <h3 class="db-project-name">SilvrLoop</h3>
+        <p class="db-project-desc">Helps families coordinate caregiving tasks for aging parents. Spun out of Optum's Innovation Garage and relaunched as Reema Health.</p>
+        <p class="db-project-note">Spun out → Reema Health</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">AI · Independent</p>
+        <h3 class="db-project-name">Skail AI</h3>
+        <p class="db-project-desc">Turns teams into thought leaders — generating authentic brand stories and social content at scale while preserving each person's individual voice.</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">EdTech · Sophia Learning</p>
+        <h3 class="db-project-name">Sophia Learning</h3>
+        <p class="db-project-desc">Self-paced online gen ed courses that transfer for college credit — asynchronous, affordable, and accessible to non-traditional learners.</p>
+      </div>
+
+      <div class="db-project-card">
+        <p class="db-project-tag">IoT · Trane / Nexia</p>
+        <h3 class="db-project-name">Trane Home – OpenADR</h3>
+        <p class="db-project-desc">Partnered to bring OpenADR 2.0b and AHRI-1380 compliance to Trane's smart thermostat app — enabling demand response for connected home devices.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="db-section" id="stack">
+    <div class="db-stack-grid">
+      <div class="db-stack-cell">
+        <p class="db-stack-category">Languages</p>
+        <ul class="db-stack-items"><li>Ruby</li><li>Javascript &amp; TypeScript</li><li>Python</li><li>Go</li></ul>
+      </div>
+      <div class="db-stack-cell">
+        <p class="db-stack-category">Frameworks</p>
+        <ul class="db-stack-items"><li>Rails</li><li>Django</li><li>Express</li><li>Fast API</li></ul>
+      </div>
+      <div class="db-stack-cell">
+        <p class="db-stack-category">Cloud</p>
+        <ul class="db-stack-items"><li>AWS</li><li>GCP</li><li>Azure</li><li>Heroku</li></ul>
+      </div>
+      <div class="db-stack-cell">
+        <p class="db-stack-category">Databases</p>
+        <ul class="db-stack-items"><li>PostgreSQL</li><li>MySQL</li><li>ElasticSearch</li><li>Redshift</li></ul>
+      </div>
+      <div class="db-stack-cell">
+        <p class="db-stack-category">AI</p>
+        <ul class="db-stack-items"><li>Claude</li><li>OpenAI</li><li>Amazon Bedrock</li><li>Gemini / Google Vertex</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="db-section">
+    <p class="db-section-label">A programmer's creed</p>
+    <blockquote class="db-quote-block">
+      <p class="db-quote-text">"All programmers are optimists… 'This time it will surely run,' or 'I just found the last bug.'"<br>— Frederick Brooks, The Mythical Man Month</p>
+    </blockquote>
+  </section>
+
+  <section class="db-section" id="contact" style="border-bottom: none;">
+    <p class="db-section-label">Find me elsewhere</p>
+    <div class="db-social-row">
+      <a class="db-social-link" href="https://github.com/dbelling">GitHub</a>
+      <a class="db-social-link" href="https://linkedin.com/in/danbelling">LinkedIn</a>
+      <a class="db-social-link" href="https://stackoverflow.com/users/4557209/danbelling">Stack Overflow</a>
+      <a class="db-social-link" href="https://instagram.com/danbelling">Instagram</a>
+    </div>
+  </section>
+
+</body>
+</html>
