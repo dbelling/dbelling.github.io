@@ -112,6 +112,20 @@
       text-decoration: none;
       display: inline-block;
     }
+    .db-btn-secondary {
+      background: #c9b88a;
+      color: #0e0f0c;
+      border: none;
+      padding: 10px 22px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-block;
+    }
     .db-btn-ghost {
       background: transparent;
       color: rgba(232,228,217,0.55);
@@ -232,6 +246,49 @@
       list-style: none;
     }
 
+    /* Clients Marquee */
+    .db-clients-marquee {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background: rgba(232,228,217,0.02);
+      border: 0.5px solid rgba(232,228,217,0.07);
+      padding: 2rem 0;
+    }
+    .db-clients-track {
+      display: flex;
+      gap: 4rem;
+      animation: scroll 40s linear infinite;
+      width: fit-content;
+    }
+    .db-clients-track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .db-client-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 140px;
+      flex-shrink: 0;
+    }
+    .db-client-logo img {
+      max-width: 120px;
+      max-height: 50px;
+      object-fit: contain;
+      filter: grayscale(80%) brightness(1.4) contrast(1.1);
+      opacity: 0.85;
+      transition: all 0.3s;
+    }
+    .db-client-logo:hover img {
+      filter: grayscale(0%) brightness(1.2);
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
     /* Quote */
     .db-quote-block {
       border-left: 2px solid #8fb87a;
@@ -273,6 +330,9 @@
       .db-section { padding: 2rem 1.5rem; }
       .db-projects-grid { grid-template-columns: 1fr; }
       .db-stack-grid { grid-template-columns: repeat(2, 1fr); }
+      .db-clients-track { gap: 2.5rem; }
+      .db-client-logo { min-width: 100px; }
+      .db-client-logo img { max-width: 90px; max-height: 40px; }
     }
   </style>
 </head>
@@ -293,11 +353,19 @@
       </p>
       <div class="db-cta-row">
         <a class="db-btn-primary" href="https://linkedin.com/in/danbelling">LinkedIn</a>
+        <a class="db-btn-secondary" href="mailto:danhbelling@gmail.com">Contact</a>
         <a class="db-btn-ghost" href="https://github.com/dbelling">GitHub</a>
       </div>
     </div>
     <div>
       <img class="db-avatar" src="https://gravatar.com/userimage/98488740/c464201fe1487521ec3b142452a06e07.jpeg?size=200" alt="Dan Belling" />
+    </div>
+  </section>
+
+  <section class="db-section" id="clients">
+    <p class="db-section-label">Clients Served</p>
+    <div class="db-clients-marquee">
+      <div class="db-clients-track" id="clients-track"></div>
     </div>
   </section>
 
@@ -383,6 +451,39 @@
       </div>
     </div>
   </section>
+
+  <script>
+    (function() {
+      const clients = [
+        { logo: 'unitedhealth.svg', name: 'UnitedHealth Group' },
+        { logo: 'trevipay.png', name: 'TreviPay' },
+        { logo: 'usatoday.svg', name: 'USA Today' },
+        { logo: 'totalexpert.png', name: 'Total Expert' },
+        { logo: 'microsoft.svg', name: 'Microsoft' },
+        { logo: 'forusall.svg', name: 'ForUsAll' },
+        { logo: 'cleancounts.svg', name: 'CleanCounts' },
+        { logo: 'sophia.svg', name: 'Sophia Learning' },
+        { logo: 'nexia.svg', name: 'Nexia' },
+        { logo: 'nexteraenergy.png', name: 'NextEra Energy' }
+      ];
+
+      const track = document.getElementById('clients-track');
+
+      function createLogoElement(client) {
+        const div = document.createElement('div');
+        div.className = 'db-client-logo';
+        const img = document.createElement('img');
+        img.src = `logos/${client.logo}`;
+        img.alt = client.name;
+        div.appendChild(img);
+        return div;
+      }
+
+      // Add logos twice for seamless loop
+      clients.forEach(client => track.appendChild(createLogoElement(client)));
+      clients.forEach(client => track.appendChild(createLogoElement(client)));
+    })();
+  </script>
 
   <section class="db-section">
     <p class="db-section-label">A programmer's creed</p>
