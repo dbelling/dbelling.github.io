@@ -179,7 +179,7 @@
     /* Projects */
     .db-projects-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: rgba(232,228,217,0.07);
       border: 0.5px solid rgba(232,228,217,0.07);
@@ -374,12 +374,6 @@
     <div class="db-projects-grid">
 
       <div class="db-project-card">
-        <p class="db-project-tag">Fintech · ForUsAll</p>
-        <h3 class="db-project-name">Alt-401(k)</h3>
-        <p class="db-project-desc">An affordable 401(k) with crypto investment options — giving businesses and employees more flexibility and growth potential, including a dedicated Roth crypto window.</p>
-      </div>
-
-      <div class="db-project-card">
         <p class="db-project-tag">B2B Payments · Apruve</p>
         <h3 class="db-project-name">Apruve – BigCommerce</h3>
         <p class="db-project-desc">Let BigCommerce merchants extend net terms to business buyers while getting paid within 24 hours — no manual tasks required.</p>
@@ -410,12 +404,6 @@
         <p class="db-project-tag">AI · Independent</p>
         <h3 class="db-project-name">Skail AI</h3>
         <p class="db-project-desc">Turns teams into thought leaders — generating authentic brand stories and social content at scale while preserving each person's individual voice.</p>
-      </div>
-
-      <div class="db-project-card">
-        <p class="db-project-tag">EdTech · Sophia Learning</p>
-        <h3 class="db-project-name">Sophia Learning</h3>
-        <p class="db-project-desc">Self-paced online gen ed courses that transfer for college credit — asynchronous, affordable, and accessible to non-traditional learners.</p>
       </div>
 
       <div class="db-project-card">
@@ -455,16 +443,16 @@
   <script>
     (function() {
       const clients = [
-        { logo: 'unitedhealth.svg', name: 'UnitedHealth Group' },
-        { logo: 'trevipay.png', name: 'TreviPay' },
-        { logo: 'usatoday.svg', name: 'USA Today' },
-        { logo: 'totalexpert.png', name: 'Total Expert' },
         { logo: 'microsoft.svg', name: 'Microsoft' },
-        { logo: 'forusall.svg', name: 'ForUsAll' },
+        { logo: 'unitedhealth.svg', name: 'UnitedHealth Group' },
+        { logo: 'usatoday.svg', name: 'USA Today' },
         { logo: 'cleancounts.svg', name: 'CleanCounts' },
+        { logo: 'nexteraenergy.png', name: 'NextEra Energy' },
+        { logo: 'trevipay.png', name: 'TreviPay' },
+        { logo: 'totalexpert.png', name: 'Total Expert' },
+        { logo: 'forusall.svg', name: 'ForUsAll' },
         { logo: 'sophia.svg', name: 'Sophia Learning' },
-        { logo: 'nexia.svg', name: 'Nexia' },
-        { logo: 'nexteraenergy.png', name: 'NextEra Energy' }
+        { logo: 'nexia.png', name: 'Nexia' }
       ];
 
       const track = document.getElementById('clients-track');
