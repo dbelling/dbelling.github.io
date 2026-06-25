@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Dan Belling — Software Developer & Educator based in Minneapolis, MN." />
   <title>Dan Belling, Software Developer</title>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -54,11 +55,14 @@
     /* Hero */
     .db-hero {
       padding: 5rem 3rem 4rem;
-      display: grid;
-      grid-template-columns: 1fr 180px;
-      gap: 4rem;
-      align-items: start;
       border-bottom: 0.5px solid rgba(232,228,217,0.12);
+    }
+    .db-hero-content {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 2rem;
     }
     .db-hero-name {
       font-family: 'DM Serif Display', serif;
@@ -84,7 +88,6 @@
       color: #e8e4d9;
       line-height: 1.75;
       max-width: 540px;
-      margin-bottom: 2rem;
       font-weight: 300;
     }
     .db-hero-bio a {
@@ -147,6 +150,15 @@
       border: 0.5px solid rgba(232,228,217,0.12);
       filter: grayscale(20%);
       display: block;
+    }
+    .db-linkedin-badge {
+      padding: 1rem;
+      background: rgba(232,228,217,0.03);
+      border: 0.5px solid rgba(232,228,217,0.08);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     /* Sections */
@@ -321,12 +333,17 @@
     @media (max-width: 640px) {
       .db-nav { padding: 1.25rem 1.5rem; }
       .db-hero {
-        grid-template-columns: 1fr;
         padding: 3rem 1.5rem;
+      }
+      .db-hero-content {
+        grid-template-columns: 1fr;
         gap: 2rem;
       }
       .db-hero-name { font-size: 38px; }
       .db-avatar { width: 120px; height: 120px; }
+      .db-linkedin-badge {
+        margin: 0 auto;
+      }
       .db-section { padding: 2rem 1.5rem; }
       .db-projects-grid { grid-template-columns: 1fr; }
       .db-stack-grid { grid-template-columns: repeat(2, 1fr); }
@@ -343,22 +360,23 @@
   </nav>
 
   <section class="db-hero" id="about">
-    <div>
-      <h1 class="db-hero-name">Dan<br><em>Belling</em></h1>
-      <p class="db-hero-title">Software Developer, Technology Consultant &amp; Educator</p>
-      <p class="db-hero-bio">
-        I build things for the web — from fintech and media to edtech and nonprofits.
-        Currently at <a href="https://www.slalom.com/">Slalom</a>. Also a bootcamp instructor, occasional trivia host,
-        and fulfilled pet parent to two dogs with better Instagram followings than mine.
-      </p>
-      <div class="db-cta-row">
-        <a class="db-btn-primary" href="https://linkedin.com/in/danbelling">LinkedIn</a>
-        <a class="db-btn-secondary" href="mailto:danhbelling@gmail.com">Contact</a>
-        <a class="db-btn-ghost" href="https://github.com/dbelling">GitHub</a>
+    <div class="db-hero-content">
+      <div>
+        <h1 class="db-hero-name">Dan<br><em>Belling</em></h1>
+        <p class="db-hero-title">Software Developer, Technology Consultant &amp; Educator</p>
+        <p class="db-hero-bio">
+          I build things for the web — from fintech and media to edtech and nonprofits.
+          Currently at <a href="https://www.slalom.com/">Slalom</a>. Also a bootcamp instructor, occasional trivia host,
+          and fulfilled pet parent to two dogs with better Instagram followings than mine.
+        </p>
+      </div>
+      <div class="db-linkedin-badge">
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="danbelling" data-version="v1"></div>
       </div>
     </div>
-    <div>
-      <img class="db-avatar" src="https://gravatar.com/userimage/98488740/c464201fe1487521ec3b142452a06e07.jpeg?size=200" alt="Dan Belling" />
+    <div class="db-cta-row">
+      <a class="db-btn-primary" href="mailto:danhbelling@gmail.com">Contact</a>
+      <a class="db-btn-secondary" href="https://github.com/dbelling">GitHub</a>
     </div>
   </section>
 
